@@ -18,7 +18,6 @@
 .welcome {
   font-size: 0px;
   color: #666666;
-  align-items: center;
 }
 
 .welcome .hello {
@@ -27,6 +26,7 @@
 
 .welcome span,
 .welcome a {
+  line-height: 30px;
   font-size: 12px;
   text-decoration: none;
   color: #666666;
@@ -46,6 +46,7 @@
 }
 .topbar-nav .list li a {
   font-size: 12px;
+  line-height: 30px;
   padding: 0 15px;
   border-right: 1px solid #666666;
 }
