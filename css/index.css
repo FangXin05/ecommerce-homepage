@@ -71,10 +71,15 @@
   width: 510px;
   height: 34px;
 }
+input {
+  outline: none;
+}
 .search .search2 {
   width: 80px;
   height: 36px;
   background-color: #dd302d;
+}
+.search2:hover {
 }
 /*#endregion logo和搜索栏*/
 
@@ -164,6 +169,7 @@
 }
 .main-things .main-left li:hover .second-list {
   display: block;
+  z-index: 999;
 }
 .main-things .main-left .second-list-list dl {
   display: flex;
