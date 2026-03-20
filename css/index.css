@@ -195,11 +195,69 @@
 /*#endregion主内容区左侧导航*/
 
 /*#region主内容区轮播图*/
-.main-things .main-lunbo {
+.main-things .slider {
   background-color: aqua;
   width: 690px;
   height: 458px;
+  position: relative;
+  border: none;
+  overflow: hidden;
 }
+.toggle button {
+  background-color: rgba(0, 0, 0, 0.4); /* 半透明黑色，不遮挡图片 */
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 10px;
+  transition: background-color 0.2s;
+}
+.toggle button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.toggle button:active {
+  transform: scale(0.95);
+}
+
+.prev {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+}
+.next {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+}
+.indicator {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.indicator li {
+  width: 8px;
+  height: 8px;
+  margin: 4px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0.4;
+  cursor: pointer;
+}
+.indicator li.active {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+}
+
 /*#endregion主内容区轮播图*/
 
 /*#region主内容右侧上*/
